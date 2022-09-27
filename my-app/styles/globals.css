@@ -1,9 +1,7 @@
 html,
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  height: 100vh;
+  background-color: #131313;
 }
 
 a {
@@ -12,6 +10,8 @@ a {
 }
 
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -20,7 +20,7 @@ a {
     color-scheme: dark;
   }
   body {
-    color: white;
-    background: black;
+    color: rgb(247, 239, 239);
+    background-image: linear-gradient(to right, rgb(54, 17, 164) , rgb(198, 103, 14));
   }
 }

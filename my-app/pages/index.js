@@ -41,7 +41,7 @@ export default function Home() {
       // wait for the transaction to get mined
       await tx.wait();
       setLoading(false);
-      window.alert("You successfully minted a Crypto Dev!");
+      window.alert("You successfully minted a GIRLS-NFT!");
     } catch (err) {
       console.error(err);
     }
@@ -67,7 +67,7 @@ export default function Home() {
       // wait for the transaction to get mined
       await tx.wait();
       setLoading(false);
-      window.alert("You successfully minted a Crypto Dev!");
+      window.alert("You successfully minted a GIRLS-NFT!");
     } catch (err) {
       console.error(err);
     }
@@ -232,7 +232,7 @@ export default function Home() {
     // If user is not connected to the Goerli network, let them know and throw an error
     const { chainId } = await web3Provider.getNetwork();
     if (chainId !== 5) {
-      window.alert("Change the network to Goerli");
+      window.alert("Your network doesn't fit, change it to Goerli");
       throw new Error("Change network to Goerli");
     }
 
@@ -350,13 +350,16 @@ export default function Home() {
       <Head>
         <title>Crypto Devs</title>
         <meta name="description" content="Whitelist-Dapp" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/ethereum.ico" />
       </Head>
       <div className={styles.main}>
         <div>
-          <h1 className={styles.title}>Welcome to Crypto Devs!</h1>
+          <h1 className={styles.title}>Welcome to GIRLS-NFT</h1>
           <div className={styles.description}>
-            Its an NFT collection for developers in Crypto.
+          This is an HFT collection that was created by our team,
+          </div>
+          <div className={styles.description}>
+          for mint click on the button below.
           </div>
           <div className={styles.description}>
             {tokenIdsMinted}/20 have been minted
@@ -364,12 +367,12 @@ export default function Home() {
           {renderButton()}
         </div>
         <div>
-          <img className={styles.image} src="./cryptodevs/0.svg" />
+          <img className={styles.image} src="our-collection/girls1.svg" />
         </div>
       </div>
 
       <footer className={styles.footer}>
-        Made with &#10084; by Crypto Devs
+        Made with &#10084; best team -KsuAruDi
       </footer>
     </div>
   );
