@@ -240,6 +240,7 @@ export default function Home() {
       const signer = web3Provider.getSigner();
       return signer;
     }
+    
     return web3Provider;
   };
 
